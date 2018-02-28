@@ -1,0 +1,48 @@
+*{
+    margin:0;
+    padding:0;
+}
+*{
+    box-sizing: border-box;
+}
+#code{
+    height: 100vh;
+    overflow: hidden;
+}
+#paper>.content{
+    height: 100vh;
+    overflow: hidden;
+}
+.token.selector, 
+.token.attr-name, 
+.token.string,
+.token.char,
+.token.builtin, 
+.token.inserted{
+    color:black;
+}
+.token.punctuation {
+    color:black;
+}
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant, 
+.token.symbol, 
+.token.deleted {
+    color:black;
+}
+.token.function {
+    color:black;
+    color:orchid;
+}
+@keyframes breath{
+    0%{
+      box-shadow: 0 0 20px rgba(255,0,0,1)
+    }
+    100%{
+      box-shadow: 0 0 20px rgba(255,0,0,0.2)
+    }
+
+  }
