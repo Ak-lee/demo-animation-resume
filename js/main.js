@@ -13,11 +13,18 @@ var result = `/*
       background:rgb(222,222,222);
       font-size:16px;
   }
-  
+  #codeWrapper{
+    width:100%;
+    position:fixed;
+    left:0;
+    padding:10px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
   #code{
       border:3px solid orange;
       padding:16px;
-      margin:10px;
   }
 
   /*添加一下代码高亮效果*/
@@ -60,13 +67,8 @@ var result = `/*
 /*我需要一张白纸*/
 #codeWrapper{
     width:50%;
-    position:fixed;
-    left:0;
 }
-#code{
-    width:auto;
-    height:100%;
-}
+
 `
 var result2=`
 #paper

@@ -6,10 +6,15 @@
     box-sizing: border-box;
 }
 
+#codeWrapper{
+    height:100vh;
+}
 #code{
-    height: 100vh;
+    width:100%;
+    height:100%;
     overflow: hidden;
 }
+
 #paper>.content{
     height: 100vh;
     overflow: hidden;
