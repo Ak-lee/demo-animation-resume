@@ -18,9 +18,7 @@ var result = `/*
     position:fixed;
     left:0;
     padding:10px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    
 }
   #code{
       border:3px solid orange;
@@ -67,6 +65,7 @@ var result = `/*
 /*我需要一张白纸*/
 #codeWrapper{
     width:50%;
+    height:100%;
 }
 
 `
