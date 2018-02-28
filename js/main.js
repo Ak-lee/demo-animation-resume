@@ -13,6 +13,7 @@ var result = `/*
       background:rgb(222,222,222);
       font-size:16px;
   }
+  
   #code{
       border:3px solid orange;
       padding:16px;
@@ -57,10 +58,13 @@ var result = `/*
 
 /*下面我来介绍我自己*/
 /*我需要一张白纸*/
-#code{
+#codeWrapper{
+    width:50%;
     position:fixed;
     left:0;
-    width:48%;
+}
+#code{
+    width:auto;
     height:100%;
 }
 `
@@ -136,11 +140,7 @@ writeCode('',result,()=>{
     })
 })
 
-function markdownToHtml(fn){
-    var domPaper = document.querySelector('#paper>.content')
-    domPaper.innerHTML=marked(md);
-    fn.call()
-}
+
 
 
 
@@ -193,5 +193,9 @@ function createPaper(fn){
     document.body.appendChild(paper)
     fn.call()
 }
-
+function markdownToHtml(fn){
+    var domPaper = document.querySelector('#paper>.content')
+    domPaper.innerHTML=marked(md);
+    fn.call()
+}
 
