@@ -20,7 +20,7 @@
 
 #paper>.content{
     height: 100vh;
-    overflow: hidden;
+    overflow: auto;
 }
 .token.selector, 
 .token.attr-name, 
